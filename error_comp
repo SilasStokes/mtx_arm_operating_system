@@ -1,0 +1,1467 @@
+disk.c: In function 'get_block':
+disk.c:31:5: warning: implicit declaration of function 'getblock'; did you mean 'get_block'? [-Wimplicit-function-declaration]
+   31 |     getblock(blk, buf);
+      |     ^~~~~~~~
+      |     get_block
+disk.c: In function 'put_block':
+disk.c:35:5: warning: implicit declaration of function 'putblock'; did you mean 'put_block'? [-Wimplicit-function-declaration]
+   35 |     putblock(blk, buf);
+      |     ^~~~~~~~
+      |     put_block
+In file included from disk.c:2:
+disk.c: In function 'testFS':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+disk.c:107:5: note: in expansion of macro 'printf'
+  107 |     printf("read SUPER block\n");
+      |     ^~~~~~
+disk.c:136:13: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  136 |         if (strcmp(dp->name, "bin") == 0)
+      |             ^~~~~~
+sdc.c: In function 'sdc_handler':
+sdc.c:116:9: warning: implicit declaration of function 'V'; did you mean 'VA'? [-Wimplicit-function-declaration]
+  116 |         V(&rxsem);
+      |         ^
+      |         VA
+In file included from sdc.c:22:
+sdc.c: In function 'sdc_init':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+sdc.c:150:3: note: in expansion of macro 'printf'
+  150 |   printf("sdc_init : ");
+      |   ^~~~~~
+sdc.c: In function 'getblock':
+sdc.c:199:6: warning: implicit declaration of function 'P'; did you mean 'PA'? [-Wimplicit-function-declaration]
+  199 |      P(&rxsem);
+      |      ^
+      |      PA
+In file included from kbd.c:20:
+kbd.c: In function 'kbd_init':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+kbd.c:70:3: note: in expansion of macro 'printf'
+   70 |   printf("Detect KBD scan code: press the ENTER key : ");
+      |   ^~~~~~
+kbd.c: In function 'doF4':
+kbd.c:117:3: warning: implicit declaration of function 'kps' [-Wimplicit-function-declaration]
+  117 |   kps();
+      |   ^~~
+kbd.c: In function 'kbd_handler1':
+kbd.c:184:6: warning: implicit declaration of function 'kwakeup' [-Wimplicit-function-declaration]
+  184 |      kwakeup(&kp->data);
+      |      ^~~~~~~
+kbd.c:251:37: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  251 |       if (proc[i].status != FREE && strcmp(proc[i].res->tty, "/dev/tty0")==0){
+      |                                     ^~~~~~
+kbd.c: In function 'kgetc':
+kbd.c:416:3: warning: implicit declaration of function 'lock' [-Wimplicit-function-declaration]
+  416 |   lock();
+      |   ^~~~
+kbd.c:419:5: warning: implicit declaration of function 'unlock' [-Wimplicit-function-declaration]
+  419 |     unlock();
+      |     ^~~~~~
+kbd.c:420:5: warning: implicit declaration of function 'ksleep' [-Wimplicit-function-declaration]
+  420 |     ksleep(&kp->data);
+      |     ^~~~~~
+kbd.c: In function 'kgets':
+kbd.c:442:10: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  442 |   return strlen(s);
+      |          ^~~~~~
+kbd.c:442:10: warning: incompatible implicit declaration of built-in function 'strlen'
+kbd.c:23:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   22 | #include "keymap2"
+  +++ |+#include <string.h>
+   23 | /*
+pv.c: In function 'P':
+pv.c:28:8: warning: implicit declaration of function 'int_off' [-Wimplicit-function-declaration]
+   28 |   ps = int_off();
+      |        ^~~~~~~
+pv.c:36:7: warning: implicit declaration of function 'tswitch' [-Wimplicit-function-declaration]
+   36 |       tswitch();
+      |       ^~~~~~~
+pv.c:38:4: warning: implicit declaration of function 'int_on' [-Wimplicit-function-declaration]
+   38 |    int_on(ps);
+      |    ^~~~~~
+In file included from pv.c:17:
+pv.c: In function 'wV':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+pv.c:89:5: note: in expansion of macro 'printf'
+   89 |     printf("unblocked %d\n", p->pid);
+      |     ^~~~~~
+timer.c: In function 'timer0_handler':
+timer.c:138:21: warning: implicit declaration of function 'outSleep' [-Wimplicit-function-declaration]
+  138 |                     outSleep(p);
+      |                     ^~~~~~~~
+timer.c:153:13: warning: implicit declaration of function 'printTQ'; did you mean 'printQ'? [-Wimplicit-function-declaration]
+  153 |             printTQ();
+      |             ^~~~~~~
+      |             printQ
+timer.c:165:21: warning: implicit declaration of function 'put_tnode' [-Wimplicit-function-declaration]
+  165 |                     put_tnode(tqq);
+      |                     ^~~~~~~~~
+timer.c:180:12: warning: implicit declaration of function 'get_spsr' [-Wimplicit-function-declaration]
+  180 |     spsr = get_spsr();
+      |            ^~~~~~~~
+timer.c:188:5: warning: implicit declaration of function 'timer_clearInterrupt' [-Wimplicit-function-declaration]
+  188 |     timer_clearInterrupt(0);
+      |     ^~~~~~~~~~~~~~~~~~~~
+timer.c: At top level:
+timer.c:283:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  283 | kitimer(int time)
+      | ^~~~~~~
+timer.c: In function 'kitimer':
+timer.c:289:10: warning: implicit declaration of function 'int_off' [-Wimplicit-function-declaration]
+  289 |     ps = int_off();
+      |          ^~~~~~~
+timer.c:329:5: warning: implicit declaration of function 'int_on' [-Wimplicit-function-declaration]
+  329 |     int_on(ps);
+      |     ^~~~~~
+uart.c: In function 'uart0_handler':
+uart.c:118:37: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  118 |       if (proc[i].status != FREE && strcmp(proc[i].res->tty, "/dev/ttyS0")==0){
+      |                                     ^~~~~~
+uart.c:128:3: warning: implicit declaration of function 'V'; did you mean 'VA'? [-Wimplicit-function-declaration]
+  128 |   V(&up->inchar);       // inchar.value++; including '\r'
+      |   ^
+      |   VA
+uart.c: In function 'sgetc':
+uart.c:177:3: warning: implicit declaration of function 'P'; did you mean 'PA'? [-Wimplicit-function-declaration]
+  177 |   P(&up->inchar);
+      |   ^
+      |   PA
+uart.c: In function 'usgets':
+uart.c:332:10: warning: implicit declaration of function 'kstrlen' [-Wimplicit-function-declaration]
+  332 |   return kstrlen(buf);
+      |          ^~~~~~~
+vid.c: In function 'kputc':
+vid.c:226:5: warning: 'return' with no value, in function returning non-void
+  226 |     return;
+      |     ^~~~~~
+vid.c:219:5: note: declared here
+  219 | int kputc(char c)
+      |     ^~~~~
+vid.c:236:5: warning: 'return' with no value, in function returning non-void
+  236 |     return;
+      |     ^~~~~~
+vid.c:219:5: note: declared here
+  219 | int kputc(char c)
+      |     ^~~~~
+vid.c:244:5: warning: 'return' with no value, in function returning non-void
+  244 |     return;
+      |     ^~~~~~
+vid.c:219:5: note: declared here
+  219 | int kputc(char c)
+      |     ^~~~~
+vid.c: In function 'krpx':
+vid.c:280:6: warning: 'return' with no value, in function returning non-void
+  280 |      return;
+      |      ^~~~~~
+vid.c:276:5: note: declared here
+  276 | int krpx(u32 x)
+      |     ^~~~
+vid.c: In function 'krpu':
+vid.c:300:6: warning: 'return' with no value, in function returning non-void
+  300 |      return;
+      |      ^~~~~~
+vid.c:296:5: note: declared here
+  296 | int krpu(u32 x)
+      |     ^~~~
+vid.c: In function 'stestring':
+vid.c:356:12: warning: implicit declaration of function 'kgetc' [-Wimplicit-function-declaration]
+  356 |   while((c=kgetc()) != '\r'){
+      |            ^~~~~
+alloc_dealloc.c:34:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   34 | midalloc(MINODE *mip)
+      | ^~~~~~~~
+alloc_dealloc.c: In function 'incFreeInodes':
+alloc_dealloc.c:51:3: warning: implicit declaration of function 'bwrite' [-Wimplicit-function-declaration]
+   51 |   bwrite(bp);
+      |   ^~~~~~
+alloc_dealloc.c: In function 'ialloc':
+alloc_dealloc.c:172:16: warning: implicit declaration of function 'getmountp' [-Wimplicit-function-declaration]
+  172 |  mp = (MOUNT *)getmountp(dev);
+      |                ^~~~~~~~~
+alloc_dealloc.c: At top level:
+alloc_dealloc.c:196:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  196 | idalloc(int dev, int ino)
+      | ^~~~~~~
+alloc_dealloc.c: In function 'idalloc':
+alloc_dealloc.c:205:5: warning: 'return' with no value, in function returning non-void
+  205 |     return;
+      |     ^~~~~~
+alloc_dealloc.c:196:1: note: declared here
+  196 | idalloc(int dev, int ino)
+      | ^~~~~~~
+alloc_dealloc.c: In function 'zdalloc':
+alloc_dealloc.c:262:5: warning: 'return' with no value, in function returning non-void
+  262 |     return;
+      |     ^~~~~~
+alloc_dealloc.c:253:5: note: declared here
+  253 | int zdalloc(int dev, int bit)
+      |     ^~~~~~~
+alloc_dealloc.c: At top level:
+alloc_dealloc.c:294:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  294 | fdalloc(OFT *oftptr)
+      | ^~~~~~~
+In file included from buffer.c:17:
+buffer.c: In function 'binit':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+buffer.c:75:6: note: in expansion of macro 'printf'
+   75 |      printf("binit ");
+      |      ^~~~~~
+buffer.c: In function 'printlist':
+buffer.c:120:8: warning: implicit declaration of function 'int_off' [-Wimplicit-function-declaration]
+  120 |   ps = int_off();
+      |        ^~~~~~~
+buffer.c:130:3: warning: implicit declaration of function 'int_on' [-Wimplicit-function-declaration]
+  130 |   int_on(ps);
+      |   ^~~~~~
+buffer.c: In function 'out_freelist':
+buffer.c:142:7: warning: 'return' with no value, in function returning non-void
+  142 |       return;
+      |       ^~~~~~
+buffer.c:133:5: note: declared here
+  133 | int out_freelist(struct buf *bp)
+      |     ^~~~~~~~~~~~
+buffer.c:150:9: warning: 'return' with no value, in function returning non-void
+  150 |         return;
+      |         ^~~~~~
+buffer.c:133:5: note: declared here
+  133 | int out_freelist(struct buf *bp)
+      |     ^~~~~~~~~~~~
+buffer.c: In function 'out_devlist':
+buffer.c:168:7: warning: 'return' with no value, in function returning non-void
+  168 |       return;
+      |       ^~~~~~
+buffer.c:160:5: note: declared here
+  160 | int out_devlist(struct buf *bp)
+      |     ^~~~~~~~~~~
+buffer.c:175:8: warning: 'return' with no value, in function returning non-void
+  175 |        return;
+      |        ^~~~~~
+buffer.c:160:5: note: declared here
+  160 | int out_devlist(struct buf *bp)
+      |     ^~~~~~~~~~~
+cd_pwd.c: In function 'kchdir':
+cd_pwd.c:55:3: warning: implicit declaration of function 'get_param' [-Wimplicit-function-declaration]
+   55 |   get_param(y, pathname);
+      |   ^~~~~~~~~
+cd_pwd.c:58:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+   58 |   if (strcmp(pathname, "/")==0){
+      |       ^~~~~~
+cd_pwd.c:60:5: warning: implicit declaration of function 'ilock' [-Wimplicit-function-declaration]
+   60 |     ilock(running->res->cwd);
+      |     ^~~~~
+cd_pwd.c:61:5: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+   61 |     iput(running->res->cwd);
+      |     ^~~~
+cd_pwd.c:64:5: warning: implicit declaration of function 'iunlock' [-Wimplicit-function-declaration]
+   64 |     iunlock(root);
+      |     ^~~~~~~
+cd_pwd.c:74:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   74 |   strcpy(temp, pathname);
+      |   ^~~~~~
+cd_pwd.c:74:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+cd_pwd.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+cd_pwd.c:76:9: warning: implicit declaration of function 'getino' [-Wimplicit-function-declaration]
+   76 |   ino = getino(&dev, temp);
+      |         ^~~~~~
+cd_pwd.c:79:6: warning: implicit declaration of function 'prints'; did you mean 'printQ'? [-Wimplicit-function-declaration]
+   79 |      prints("cd : no such directory\n\r");
+      |      ^~~~~~
+      |      printQ
+In file included from cd_pwd.c:17:
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+cd_pwd.c:91:5: note: in expansion of macro 'printf'
+   91 |     printf("%s is a symlink -> ", pathname);
+      |     ^~~~~~
+cd_pwd.c: In function 'kgetcwd':
+cd_pwd.c:157:5: warning: implicit declaration of function 'upwd' [-Wimplicit-function-declaration]
+  157 |     upwd(running->res->cwd);
+      |     ^~~~
+cd_pwd.c:161:7: warning: implicit declaration of function 'put_ubyte' [-Wimplicit-function-declaration]
+  161 |       put_ubyte(*p, y);
+      |       ^~~~~~~~~
+cd_pwd.c:167:12: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  167 |     return strlen(cwdname);
+      |            ^~~~~~
+cd_pwd.c:167:12: warning: incompatible implicit declaration of built-in function 'strlen'
+cd_pwd.c:167:12: note: include '<string.h>' or provide a declaration of 'strlen'
+cd_pwd.c: At top level:
+cd_pwd.c:170:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  170 | upwd(wd) MINODE *wd;
+      | ^~~~
+cd_pwd.c: In function 'upwd':
+cd_pwd.c:178:7: warning: incompatible implicit declaration of built-in function 'strcpy'
+  178 |       strcpy(cwdname, "/");
+      |       ^~~~~~
+cd_pwd.c:178:7: note: include '<string.h>' or provide a declaration of 'strcpy'
+cd_pwd.c:179:7: warning: 'return' with no value, in function returning non-void
+  179 |       return;
+      |       ^~~~~~
+cd_pwd.c:170:1: note: declared here
+  170 | upwd(wd) MINODE *wd;
+      | ^~~~
+cd_pwd.c:182:15: warning: implicit declaration of function 'findino' [-Wimplicit-function-declaration]
+  182 |   parentino = findino((MINODE *)wd, &myino);
+      |               ^~~~~~~
+cd_pwd.c:185:12: warning: implicit declaration of function 'getmountp' [-Wimplicit-function-declaration]
+  185 |       mp = getmountp(wd->dev);
+      |            ^~~~~~~~~
+cd_pwd.c:185:10: warning: assignment to 'MOUNT *' {aka 'struct Mount *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  185 |       mp = getmountp(wd->dev);
+      |          ^
+cd_pwd.c:193:3: warning: implicit declaration of function 'findmyname' [-Wimplicit-function-declaration]
+  193 |   findmyname(parent, myino, myname);
+      |   ^~~~~~~~~~
+cd_pwd.c:199:3: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  199 |   strcat(cwdname, myname); strcat(cwdname,"/");
+      |   ^~~~~~
+cd_pwd.c:199:3: warning: incompatible implicit declaration of built-in function 'strcat'
+cd_pwd.c:199:3: note: include '<string.h>' or provide a declaration of 'strcat'
+dev.c: In function 'ubread':
+dev.c:40:7: warning: implicit declaration of function 'put_ubyte' [-Wimplicit-function-declaration]
+   40 |       put_ubyte(bp->buf[i], ubuf++);
+      |       ^~~~~~~~~
+dev.c:42:3: warning: implicit declaration of function 'brelse' [-Wimplicit-function-declaration]
+   42 |   brelse(bp);
+      |   ^~~~~~
+dev.c: In function 'ubwrite':
+dev.c:52:22: warning: implicit declaration of function 'getblk' [-Wimplicit-function-declaration]
+   52 |   bp = (struct buf *)getblk(dev, blk);
+      |                      ^~~~~~
+dev.c:55:18: warning: implicit declaration of function 'get_ubyte' [-Wimplicit-function-declaration]
+   55 |     bp->buf[i] = get_ubyte(ubuf++);   // copy block from U space to bp->buf[]
+      |                  ^~~~~~~~~
+dev.c:57:3: warning: implicit declaration of function 'bwrite'; did you mean 'ubwrite'? [-Wimplicit-function-declaration]
+   57 |   bwrite(bp);
+      |   ^~~~~~
+      |   ubwrite
+dev.c: In function 'conread':
+dev.c:88:11: warning: implicit declaration of function 'kgetc' [-Wimplicit-function-declaration]
+   88 |       r = kgetc();
+      |           ^~~~~
+dev.c: In function 'serread':
+dev.c:113:10: warning: implicit declaration of function 'sgetc' [-Wimplicit-function-declaration]
+  113 |      r = sgetc(tty);
+      |          ^~~~~
+dev.c:119:7: warning: implicit declaration of function 'usgets'; did you mean 'ugets'? [-Wimplicit-function-declaration]
+  119 |   n = usgets(tty, buf);
+      |       ^~~~~~
+      |       ugets
+dev.c: In function 'conwrite':
+dev.c:132:5: warning: implicit declaration of function 'kputc' [-Wimplicit-function-declaration]
+  132 |     kputc(*cp);
+      |     ^~~~~
+dev.c: In function 'serwrite':
+dev.c:154:5: warning: implicit declaration of function 'sputc' [-Wimplicit-function-declaration]
+  154 |     sputc(tty, c);
+      |     ^~~~~
+fs.c:60:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   60 | fs_init()
+      | ^~~~~~~
+In file included from fs.c:17:
+fs.c: In function 'fs_init':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+fs.c:79:3: note: in expansion of macro 'printf'
+   79 |   printf("mounting root : ");
+      |   ^~~~~~
+fs.c:80:3: warning: implicit declaration of function 'mountroot' [-Wimplicit-function-declaration]
+   80 |   mountroot();
+      |   ^~~~~~~~~
+link_unlink.c: In function 'klink':
+link_unlink.c:31:2: warning: implicit declaration of function 'get_param' [-Wimplicit-function-declaration]
+   31 |  get_param(y, oldfile);
+      |  ^~~~~~~~~
+In file included from link_unlink.c:17:
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+link_unlink.c:34:2: note: in expansion of macro 'printf'
+   34 |  printf("klink: %s %s\n", oldfile, newfile);
+      |  ^~~~~~
+link_unlink.c:43:9: warning: implicit declaration of function 'getino' [-Wimplicit-function-declaration]
+   43 |  oino = getino(&odev, oldfile);
+      |         ^~~~~~
+link_unlink.c:66:5: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+   66 |     iput(omip);
+      |     ^~~~
+link_unlink.c:76:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   76 |  strcpy(child,  (char *)basename(newfile));
+      |  ^~~~~~
+link_unlink.c:76:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+link_unlink.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+link_unlink.c:76:25: warning: implicit declaration of function 'basename' [-Wimplicit-function-declaration]
+   76 |  strcpy(child,  (char *)basename(newfile));
+      |                         ^~~~~~~~
+link_unlink.c:77:25: warning: implicit declaration of function 'dirname' [-Wimplicit-function-declaration]
+   77 |  strcpy(parent, (char *)dirname(newfile));
+      |                         ^~~~~~~
+link_unlink.c:96:6: warning: implicit declaration of function 'enter_name' [-Wimplicit-function-declaration]
+   96 |  r = enter_name(pmip, omip->ino, child);
+      |      ^~~~~~~~~~
+link_unlink.c: In function 'kunlink':
+link_unlink.c:149:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+  149 |   strcpy(child,  (char *)basename(filename));
+      |   ^~~~~~
+link_unlink.c:149:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+link_unlink.c:161:3: warning: implicit declaration of function 'rm_child' [-Wimplicit-function-declaration]
+  161 |   rm_child(pmip, mip->ino, child);
+      |   ^~~~~~~~
+link_unlink.c:177:7: warning: implicit declaration of function 'truncate' [-Wimplicit-function-declaration]
+  177 |       truncate(mip);
+      |       ^~~~~~~~
+link_unlink.c:179:3: warning: implicit declaration of function 'idalloc' [-Wimplicit-function-declaration]
+  179 |   idalloc(mip->dev, (u32)mip->ino);
+      |   ^~~~~~~
+link_unlink.c: In function 'ksymlink':
+link_unlink.c:236:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+  236 |  strcpy(child,  (char *)basename(newfile));
+      |  ^~~~~~
+link_unlink.c:236:2: note: include '<string.h>' or provide a declaration of 'strcpy'
+link_unlink.c:254:2: warning: implicit declaration of function 'mycreat' [-Wimplicit-function-declaration]
+  254 |  mycreat(pmip, child);
+      |  ^~~~~~~
+link_unlink.c:274:23: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  274 |  nmip->INODE.i_size = strlen(oldfile);
+      |                       ^~~~~~
+link_unlink.c:274:23: warning: incompatible implicit declaration of built-in function 'strlen'
+link_unlink.c:274:23: note: include '<string.h>' or provide a declaration of 'strlen'
+link_unlink.c: In function 'kreadlink':
+link_unlink.c:329:5: warning: implicit declaration of function 'put_ubyte' [-Wimplicit-function-declaration]
+  329 |     put_ubyte(*cp, z);
+      |     ^~~~~~~~~
+link_unlink.c:336:10: warning: incompatible implicit declaration of built-in function 'strlen'
+  336 |   return strlen((char *)mip->INODE.i_block);
+      |          ^~~~~~
+link_unlink.c:336:10: note: include '<string.h>' or provide a declaration of 'strlen'
+mkdir_creat.c: In function 'get_param':
+mkdir_creat.c:56:9: warning: implicit declaration of function 'get_ubyte' [-Wimplicit-function-declaration]
+   56 |     c = get_ubyte(y);
+      |         ^~~~~~~~~
+mkdir_creat.c: In function 'kmkdir':
+mkdir_creat.c:101:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  101 |  strcpy(child,  (char *)basename(pathname));
+      |  ^~~~~~
+mkdir_creat.c:101:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+mkdir_creat.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+mkdir_creat.c:101:25: warning: implicit declaration of function 'basename' [-Wimplicit-function-declaration]
+  101 |  strcpy(child,  (char *)basename(pathname));
+      |                         ^~~~~~~~
+mkdir_creat.c:102:25: warning: implicit declaration of function 'dirname' [-Wimplicit-function-declaration]
+  102 |  strcpy(parent, (char *)dirname(pathname));
+      |                         ^~~~~~~
+In file included from mkdir_creat.c:17:
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+mkdir_creat.c:105:4: note: in expansion of macro 'printf'
+  105 |    printf("can't mkdir /\n");
+      |    ^~~~~~
+mkdir_creat.c:108:6: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  108 |  if (strcmp(child, "/")==0){
+      |      ^~~~~~
+mkdir_creat.c:112:8: warning: implicit declaration of function 'getino' [-Wimplicit-function-declaration]
+  112 |  ino = getino(&dev, parent);
+      |        ^~~~~~
+mkdir_creat.c:119:5: warning: implicit declaration of function 'prints'; did you mean 'printQ'? [-Wimplicit-function-declaration]
+  119 |     prints("not DIR\n");
+      |     ^~~~~~
+      |     printQ
+mkdir_creat.c:120:5: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+  120 |     iput(mip);
+      |     ^~~~
+mkdir_creat.c:124:6: warning: implicit declaration of function 'mymkdir'; did you mean 'kmkdir'? [-Wimplicit-function-declaration]
+  124 |  r = mymkdir(mip, child);
+      |      ^~~~~~~
+      |      kmkdir
+mkdir_creat.c: In function 'mymkdir':
+mkdir_creat.c:144:7: warning: implicit declaration of function 'ksearch' [-Wimplicit-function-declaration]
+  144 |   if (ksearch(pinode, name)){
+      |       ^~~~~~~
+mkdir_creat.c:151:13: warning: implicit declaration of function 'ialloc' [-Wimplicit-function-declaration]
+  151 |   inumber = ialloc(dev);
+      |             ^~~~~~
+mkdir_creat.c:152:13: warning: implicit declaration of function 'zalloc' [-Wimplicit-function-declaration]
+  152 |   znumber = zalloc(dev);
+      |             ^~~~~~
+mkdir_creat.c:169:3: warning: implicit declaration of function 'set_time' [-Wimplicit-function-declaration]
+  169 |   set_time(mip);
+      |   ^~~~~~~~
+mkdir_creat.c:188:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+  188 |   strcpy(dp->name, ".");        /* File name */
+      |   ^~~~~~
+mkdir_creat.c:188:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+mkdir_creat.c:206:3: warning: implicit declaration of function 'bwrite' [-Wimplicit-function-declaration]
+  206 |   bwrite(bp);
+      |   ^~~~~~
+mkdir_creat.c:210:3: warning: implicit declaration of function 'enter_name' [-Wimplicit-function-declaration]
+  210 |   enter_name(pinode, inumber, name);
+      |   ^~~~~~~~~~
+mkdir_creat.c: In function 'ocreat':
+mkdir_creat.c:228:4: warning: incompatible implicit declaration of built-in function 'strcpy'
+  228 |    strcpy(child,  (char *)basename(pathname));
+      |    ^~~~~~
+mkdir_creat.c:228:4: note: include '<string.h>' or provide a declaration of 'strcpy'
+mkdir_creat.c:253:9: warning: implicit declaration of function 'mycreat'; did you mean 'ocreat'? [-Wimplicit-function-declaration]
+  253 |     r = mycreat(mip, child);
+      |         ^~~~~~~
+      |         ocreat
+In file included from mkdir_creat.c:488:
+di.c: In function 'enter_name':
+di.c:32:14: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   32 |   need = 4*((strlen(name)+8+3)/4);
+      |              ^~~~~~
+di.c:32:14: warning: incompatible implicit declaration of built-in function 'strlen'
+di.c:1:1: note: include '<string.h>' or provide a declaration of 'strlen'
+  +++ |+#include <string.h>
+    1 | /********************************************************************
+di.c:47:9: warning: implicit declaration of function 'strncpy' [-Wimplicit-function-declaration]
+   47 |         strncpy(dp->name, name, dp->name_len);
+      |         ^~~~~~~
+di.c:47:9: warning: incompatible implicit declaration of built-in function 'strncpy'
+di.c:47:9: note: include '<string.h>' or provide a declaration of 'strncpy'
+di.c:76:9: warning: incompatible implicit declaration of built-in function 'strncpy'
+   76 |         strncpy(dp->name, name, strlen(name));
+      |         ^~~~~~~
+di.c:76:9: note: include '<string.h>' or provide a declaration of 'strncpy'
+di.c:81:6: warning: implicit declaration of function 'brelse' [-Wimplicit-function-declaration]
+   81 |      brelse(bp);               // bp not modified, just release it
+      |      ^~~~~~
+di.c: In function 'rm_child':
+di.c:119:16: warning: implicit declaration of function 'zdalloc' [-Wimplicit-function-declaration]
+  119 |                zdalloc(parent->dev, parent->INODE.i_block[i]);
+      |                ^~~~~~~
+di.c:137:10: warning: implicit declaration of function 'last_entry' [-Wimplicit-function-declaration]
+  137 |          last_entry(bp->buf, del_len);
+      |          ^~~~~~~~~~
+di.c:138:17: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  138 |                 memcpy(cp, cp+dp->rec_len, (&bp->buf[BLKSIZE]-cp));
+      |                 ^~~~~~
+di.c:138:17: warning: incompatible implicit declaration of built-in function 'memcpy'
+di.c:138:17: note: include '<string.h>' or provide a declaration of 'memcpy'
+mount_root.c: In function 'mountroot':
+mount_root.c:48:3: warning: implicit declaration of function 'getblock'; did you mean 'getblk'? [-Wimplicit-function-declaration]
+   48 |   getblock(1, mtbuf);
+      |   ^~~~~~~~
+      |   getblk
+mount_root.c:58:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   58 |   strcpy(mp->name, rootdev);
+      |   ^~~~~~
+mount_root.c:58:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+mount_root.c:19:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   18 | #include "global.h"
+  +++ |+#include <string.h>
+   19 | extern struct buf *bread();
+In file included from mount_root.c:17:
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+mount_root.c:73:3: note: in expansion of macro 'printf'
+   73 |   printf("bmap=%d  imap=%d  iblock=%d\n", bmap, imap, iblk);
+      |   ^~~~~~
+mount_root.c:84:3: warning: implicit declaration of function 'V'; did you mean 'VA'? [-Wimplicit-function-declaration]
+   84 |   V(&root->lock);
+      |   ^
+      |   VA
+mount_root.c: In function 'ksync':
+mount_root.c:118:10: warning: implicit declaration of function 'P'; did you mean 'PA'? [-Wimplicit-function-declaration]
+  118 |          P(&mip->lock);
+      |          ^
+      |          PA
+mount_root.c:119:11: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+  119 |           iput(mip); /* force out */
+      |           ^~~~
+mount_root.c:133:8: warning: implicit declaration of function 'awrite' [-Wimplicit-function-declaration]
+  133 |        awrite(bp);
+      |        ^~~~~~
+mount_umount.c:19:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   19 | kmount(char *y, char *z)
+      | ^~~~~~
+mount_umount.c: In function 'kmount':
+mount_umount.c:34:9: warning: implicit declaration of function 'get_ubyte' [-Wimplicit-function-declaration]
+   34 |     c = get_ubyte(y);
+      |         ^~~~~~~~~
+In file included from mount_umount.c:17:
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+mount_umount.c:53:3: note: in expansion of macro 'printf'
+   53 |   printf("mount %s %s\n", filesys, mountdir);
+      |   ^~~~~~
+mount_umount.c:78:11: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+   78 |       if (strcmp(mp->name, filesys) == 0 && mp->busy){
+      |           ^~~~~~
+mount_umount.c:94:11: warning: implicit declaration of function 'myopen' [-Wimplicit-function-declaration]
+   94 |   spdev = myopen(filesys, 0);
+      |           ^~~~~~
+mount_umount.c:105:3: warning: implicit declaration of function 'myclose' [-Wimplicit-function-declaration]
+  105 |   myclose(spdev);
+      |   ^~~~~~~
+mount_umount.c:135:5: warning: implicit declaration of function 'brelse' [-Wimplicit-function-declaration]
+  135 |     brelse(bp);
+      |     ^~~~~~
+mount_umount.c:146:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  146 |   strcpy(temp, mountdir);
+      |   ^~~~~~
+mount_umount.c:146:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+mount_umount.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+mount_umount.c:149:9: warning: implicit declaration of function 'getino' [-Wimplicit-function-declaration]
+  149 |   ino = getino(&dev, temp);
+      |         ^~~~~~
+mount_umount.c:161:6: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+  161 |      iput(ip);
+      |      ^~~~
+mount_umount.c:199:3: warning: implicit declaration of function 'iunlock' [-Wimplicit-function-declaration]
+  199 |   iunlock(ip);
+      |   ^~~~~~~
+mount_umount.c: At top level:
+mount_umount.c:205:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  205 | kumount(char *y)
+      | ^~~~~~~
+mount_umount.c: In function 'kumount':
+mount_umount.c:276:7: warning: implicit declaration of function 'awrite' [-Wimplicit-function-declaration]
+  276 |       awrite(bp);
+      |       ^~~~~~
+mount_umount.c:287:3: warning: implicit declaration of function 'ilock' [-Wimplicit-function-declaration]
+  287 |   ilock(ip);
+      |   ^~~~~
+In file included from open_close.c:17:
+open_close.c: In function 'truncate':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+open_close.c:30:4: note: in expansion of macro 'printf'
+   30 |    printf("truncate [%d %d]: ", mip->dev, mip->ino);
+      |    ^~~~~~
+open_close.c:35:7: warning: implicit declaration of function 'zdalloc' [-Wimplicit-function-declaration]
+   35 |       zdalloc(mip->dev, mip->INODE.i_block[i]);
+      |       ^~~~~~~
+open_close.c:42:7: warning: implicit declaration of function 'get_block' [-Wimplicit-function-declaration]
+   42 |       get_block(mip->dev, mip->INODE.i_block[12], buf12);
+      |       ^~~~~~~~~
+open_close.c: In function 'kopen':
+open_close.c:197:3: warning: implicit declaration of function 'get_param' [-Wimplicit-function-declaration]
+  197 |   get_param(y, pathname);
+      |   ^~~~~~~~~
+open_close.c:209:7: warning: implicit declaration of function 'myopen'; did you mean 'kopen'? [-Wimplicit-function-declaration]
+  209 |   r = myopen(pathname, flag);
+      |       ^~~~~~
+      |       kopen
+open_close.c: In function 'myopen':
+open_close.c:227:6: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  227 |      strcpy(filename, pathname);
+      |      ^~~~~~
+open_close.c:227:6: warning: incompatible implicit declaration of built-in function 'strcpy'
+open_close.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+open_close.c:231:6: warning: implicit declaration of function 'upwd' [-Wimplicit-function-declaration]
+  231 |      upwd(running->res->cwd);               /* need cwd name string */
+      |      ^~~~
+open_close.c:233:6: warning: incompatible implicit declaration of built-in function 'strcpy'
+  233 |      strcpy(filename, cwdname);  /******************** KCW ************/
+      |      ^~~~~~
+open_close.c:233:6: note: include '<string.h>' or provide a declaration of 'strcpy'
+open_close.c:234:6: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  234 |      strcat(filename, pathname);
+      |      ^~~~~~
+open_close.c:234:6: warning: incompatible implicit declaration of built-in function 'strcat'
+open_close.c:234:6: note: include '<string.h>' or provide a declaration of 'strcat'
+open_close.c:239:9: warning: implicit declaration of function 'getino' [-Wimplicit-function-declaration]
+  239 |   ino = getino(&dev, filename);
+      |         ^~~~~~
+open_close.c:246:11: warning: implicit declaration of function 'ocreat' [-Wimplicit-function-declaration]
+  246 |       if( ocreat(filename) < 0)
+      |           ^~~~~~
+open_close.c:263:9: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+  263 |         iput(mip);
+      |         ^~~~
+open_close.c:281:10: warning: implicit declaration of function 'falloc' [-Wimplicit-function-declaration]
+  281 |   oftp = falloc();
+      |          ^~~~~~
+open_close.c:281:8: warning: assignment to 'OFT *' {aka 'struct Oft *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  281 |   oftp = falloc();
+      |        ^
+open_close.c:334:6: warning: implicit declaration of function 'fdalloc' [-Wimplicit-function-declaration]
+  334 |      fdalloc(oftp);
+      |      ^~~~~~~
+open_close.c:342:3: warning: implicit declaration of function 'iunlock' [-Wimplicit-function-declaration]
+  342 |   iunlock(mip);  // unlock minode
+      |   ^~~~~~~
+open_close.c: In function 'kclose':
+open_close.c:359:10: warning: implicit declaration of function 'myclose'; did you mean 'kclose'? [-Wimplicit-function-declaration]
+  359 |   return(myclose(fd));
+      |          ^~~~~~~
+      |          kclose
+open_close.c: In function 'myclose':
+open_close.c:376:13: warning: implicit declaration of function 'close_pipe' [-Wimplicit-function-declaration]
+  376 |      return(close_pipe(fd));
+      |             ^~~~~~~~~~
+open_close.c:387:3: warning: implicit declaration of function 'ilock' [-Wimplicit-function-declaration]
+  387 |   ilock(mip);
+      |   ^~~~~
+In file included from read.c:17:
+read.c: In function 'kread':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+read.c:30:5: note: in expansion of macro 'printf'
+   30 |     printf("bad nbytes\n");
+      |     ^~~~~~
+read.c:50:12: warning: implicit declaration of function 'read_pipe' [-Wimplicit-function-declaration]
+   50 |     return read_pipe(fd, buf, nbytes);
+      |            ^~~~~~~~~
+read.c:97:2: warning: implicit declaration of function 'ilock' [-Wimplicit-function-declaration]
+   97 |  ilock(oftp->inodeptr);
+      |  ^~~~~
+read.c:98:8: warning: implicit declaration of function 'myread'; did you mean 'kread'? [-Wimplicit-function-declaration]
+   98 |    n = myread(fd, buf, nbytes, 0);
+      |        ^~~~~~
+      |        kread
+read.c:99:2: warning: implicit declaration of function 'iunlock' [-Wimplicit-function-declaration]
+   99 |  iunlock(oftp->inodeptr);
+      |  ^~~~~~~
+read.c: In function 'myread':
+read.c:145:10: warning: implicit declaration of function 'brelse' [-Wimplicit-function-declaration]
+  145 |          brelse(bp);
+      |          ^~~~~~
+read.c:181:11: warning: implicit declaration of function 'put_ubyte' [-Wimplicit-function-declaration]
+  181 |           put_ubyte(*cp, cq);
+      |           ^~~~~~~~~
+rmdir.c: In function 'krmdir':
+rmdir.c:31:2: warning: implicit declaration of function 'get_param' [-Wimplicit-function-declaration]
+   31 |  get_param(y, pathname);
+      |  ^~~~~~~~~
+rmdir.c:39:8: warning: implicit declaration of function 'getino' [-Wimplicit-function-declaration]
+   39 |  ino = getino(&dev, pathname);
+      |        ^~~~~~
+rmdir.c:56:5: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+   56 |     iput(ip);  return(-1);
+      |     ^~~~
+rmdir.c:62:5: warning: implicit declaration of function 'prints'; did you mean 'printQ'? [-Wimplicit-function-declaration]
+   62 |     prints("not owner\n");
+      |     ^~~~~~
+      |     printQ
+rmdir.c:110:7: warning: implicit declaration of function 'brelse' [-Wimplicit-function-declaration]
+  110 |       brelse(bp);
+      |       ^~~~~~
+rmdir.c:124:13: warning: implicit declaration of function 'findino' [-Wimplicit-function-declaration]
+  124 |  myparent = findino(ip, &me);
+      |             ^~~~~~~
+rmdir.c:127:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  127 |  strcpy(child, (char *)basename(pathname));
+      |  ^~~~~~
+rmdir.c:127:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+rmdir.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+rmdir.c:127:24: warning: implicit declaration of function 'basename' [-Wimplicit-function-declaration]
+  127 |  strcpy(child, (char *)basename(pathname));
+      |                        ^~~~~~~~
+rmdir.c:130:2: warning: implicit declaration of function 'rm_child' [-Wimplicit-function-declaration]
+  130 |  rm_child(pip, me, child);
+      |  ^~~~~~~~
+rmdir.c:137:4: warning: implicit declaration of function 'zdalloc' [-Wimplicit-function-declaration]
+  137 |    zdalloc(ip->dev, (u32)ip->INODE.i_block[i]);
+      |    ^~~~~~~
+rmdir.c:139:2: warning: implicit declaration of function 'idalloc' [-Wimplicit-function-declaration]
+  139 |  idalloc(ip->dev, (u32)ip->ino);
+      |  ^~~~~~~
+stat.c: In function 'ustat':
+stat.c:57:7: warning: implicit declaration of function 'put_ubyte' [-Wimplicit-function-declaration]
+   57 |       put_ubyte(*cp, z);
+      |       ^~~~~~~~~
+stat.c: At top level:
+stat.c:63:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   63 | kstat(char *y, char *z)
+      | ^~~~~
+stat.c: In function 'kstat':
+stat.c:72:3: warning: implicit declaration of function 'get_param' [-Wimplicit-function-declaration]
+   72 |   get_param(y, pathname);
+      |   ^~~~~~~~~
+stat.c:76:7: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+   76 |   if (strcmp(pathname, "./")==0 || strcmp(pathname, ".")==0){
+      |       ^~~~~~
+stat.c:79:11: warning: implicit declaration of function 'P'; did you mean 'PA'? [-Wimplicit-function-declaration]
+   79 |           P(&mip->lock);
+      |           ^
+      |           PA
+stat.c:87:17: warning: implicit declaration of function 'getino' [-Wimplicit-function-declaration]
+   87 |           ino = getino(&dev, pathname);
+      |                 ^~~~~~
+stat.c:97:3: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+   97 |   iput(mip);
+      |   ^~~~
+touch.c: In function 'ktouch':
+touch.c:27:3: warning: implicit declaration of function 'get_param' [-Wimplicit-function-declaration]
+   27 |   get_param(y, pathname);
+      |   ^~~~~~~~~
+touch.c:33:6: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   33 |      strcpy(filename, pathname);
+      |      ^~~~~~
+touch.c:33:6: warning: incompatible implicit declaration of built-in function 'strcpy'
+touch.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+touch.c:37:6: warning: implicit declaration of function 'upwd' [-Wimplicit-function-declaration]
+   37 |      upwd(running->res->cwd);               // need cwd name string
+      |      ^~~~
+touch.c:39:6: warning: incompatible implicit declaration of built-in function 'strcpy'
+   39 |      strcpy(filename, cwdname);
+      |      ^~~~~~
+touch.c:39:6: note: include '<string.h>' or provide a declaration of 'strcpy'
+touch.c:40:6: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+   40 |      strcat(filename, pathname);
+      |      ^~~~~~
+touch.c:40:6: warning: incompatible implicit declaration of built-in function 'strcat'
+touch.c:40:6: note: include '<string.h>' or provide a declaration of 'strcat'
+touch.c:43:9: warning: implicit declaration of function 'getino' [-Wimplicit-function-declaration]
+   43 |   ino = getino(&dev, filename);
+      |         ^~~~~~
+touch.c:50:3: warning: implicit declaration of function 'set_time' [-Wimplicit-function-declaration]
+   50 |   set_time(mip);
+      |   ^~~~~~~~
+touch.c:52:3: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+   52 |   iput(mip);
+      |   ^~~~
+touch.c: In function 'set_time':
+touch.c:59:3: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+   59 |   memcpy(&(mip->INODE.i_date), btime, 4);   // INODE.i_date=date
+      |   ^~~~~~
+touch.c:59:3: warning: incompatible implicit declaration of built-in function 'memcpy'
+touch.c:59:3: note: include '<string.h>' or provide a declaration of 'memcpy'
+In file included from touch.c:17:
+touch.c: In function 'pmdate':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+touch.c:66:4: note: in expansion of macro 'printf'
+   66 |    printf("date=%c%c%c%c-%c%c-%c%c  ",
+      |    ^~~~~~
+util.c: In function 'dirname':
+util.c:53:2: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   53 |  strcpy(gname, s);
+      |  ^~~~~~
+util.c:53:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+util.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+util.c: In function 'basename':
+util.c:72:2: warning: incompatible implicit declaration of built-in function 'strcpy'
+   72 |  strcpy(gname, s);
+      |  ^~~~~~
+util.c:72:2: note: include '<string.h>' or provide a declaration of 'strcpy'
+util.c: In function 'ilock':
+util.c:98:3: warning: implicit declaration of function 'P'; did you mean 'PA'? [-Wimplicit-function-declaration]
+   98 |   P(&mip->lock);
+      |   ^
+      |   PA
+util.c: In function 'iunlock':
+util.c:103:3: warning: implicit declaration of function 'V'; did you mean 'VA'? [-Wimplicit-function-declaration]
+  103 |   V(&mip->lock);
+      |   ^
+      |   VA
+util.c: In function 'iget':
+util.c:136:18: warning: implicit declaration of function 'mialloc' [-Wimplicit-function-declaration]
+  136 |  mip = (MINODE *)mialloc();       // refCount = 1 by mialloc()
+      |                  ^~~~~~~
+util.c:174:2: warning: implicit declaration of function 'brelse' [-Wimplicit-function-declaration]
+  174 |  brelse(bp);
+      |  ^~~~~~
+In file included from util.c:17:
+util.c: In function 'valid':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+util.c:182:6: note: in expansion of macro 'printf'
+  182 |      printf("PANIC %d [%d%d]refCount<0\n", running->pid,mip->dev,mip->ino);
+      |      ^~~~~~
+util.c:183:6: warning: implicit declaration of function 'kgetc' [-Wimplicit-function-declaration]
+  183 |      kgetc();
+      |      ^~~~~
+util.c: At top level:
+util.c:187:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  187 | iput(MINODE *mip)
+      | ^~~~
+util.c: In function 'iput':
+util.c:197:6: warning: 'return' with no value, in function returning non-void
+  197 |      return;
+      |      ^~~~~~
+util.c:187:1: note: declared here
+  187 | iput(MINODE *mip)
+      | ^~~~
+util.c:258:2: warning: implicit declaration of function 'bwrite' [-Wimplicit-function-declaration]
+  258 |  bwrite(bp);
+      |  ^~~~~~
+util.c: In function 'ksearch':
+util.c:298:15: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  298 |           if (strcmp(dp->name, name)==0){
+      |               ^~~~~~
+util.c: In function 'findmyname':
+util.c:340:11: warning: implicit declaration of function 'strncpy' [-Wimplicit-function-declaration]
+  340 |           strncpy(myname, dp->name, dp->name_len);
+      |           ^~~~~~~
+util.c:340:11: warning: incompatible implicit declaration of built-in function 'strncpy'
+util.c:340:11: note: include '<string.h>' or provide a declaration of 'strncpy'
+util.c: In function 'getino':
+util.c:385:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+  385 |   strcpy(pathname, path);  // use local pathname[ ]; do NOT destroy path[ ]
+      |   ^~~~~~
+util.c:385:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+In file included from write.c:17:
+write.c: In function 'kwrite':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+write.c:38:7: note: in expansion of macro 'printf'
+   38 |       printf("fd = %d is NOT FOR WRITE", fd);
+      |       ^~~~~~
+write.c:43:13: warning: implicit declaration of function 'write_pipe' [-Wimplicit-function-declaration]
+   43 |      return write_pipe(fd, buf, nbytes);
+      |             ^~~~~~~~~~
+write.c:81:3: warning: implicit declaration of function 'ilock' [-Wimplicit-function-declaration]
+   81 |   ilock(oftp->inodeptr);
+      |   ^~~~~
+write.c:82:9: warning: implicit declaration of function 'mywrite'; did you mean 'kwrite'? [-Wimplicit-function-declaration]
+   82 |     n = mywrite(fd, buf, nbytes);
+      |         ^~~~~~~
+      |         kwrite
+write.c:83:3: warning: implicit declaration of function 'iunlock' [-Wimplicit-function-declaration]
+   83 |   iunlock(oftp->inodeptr);
+      |   ^~~~~~~
+write.c: In function 'mywrite':
+write.c:114:44: warning: implicit declaration of function 'zalloc' [-Wimplicit-function-declaration]
+  114 |             blk = ip->INODE.i_block[lbk] = zalloc(ip->dev);
+      |                                            ^~~~~~
+write.c:132:14: warning: implicit declaration of function 'getblk' [-Wimplicit-function-declaration]
+  132 |              getblk(ip->INODE.i_block[12], buf12);
+      |              ^~~~~~
+write.c:140:14: warning: implicit declaration of function 'putblock' [-Wimplicit-function-declaration]
+  140 |              putblock(ip->INODE.i_block[12], buf12);
+      |              ^~~~~~~~
+write.c:143:4: warning: implicit declaration of function 'get_block' [-Wimplicit-function-declaration]
+  143 |    get_block(ip->dev, (u32)ip->INODE.i_block[12], buf12);
+      |    ^~~~~~~~~
+write.c:153:16: warning: implicit declaration of function 'brelse' [-Wimplicit-function-declaration]
+  153 |                brelse(bp);
+      |                ^~~~~~
+write.c:158:4: warning: implicit declaration of function 'put_block' [-Wimplicit-function-declaration]
+  158 |    put_block(ip->dev, (u32)ip->INODE.i_block[12], buf12);
+      |    ^~~~~~~~~
+write.c:170:17: warning: assignment to 'struct buf *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  170 |              bp = getblk(ip->dev, b13);
+      |                 ^
+write.c:176:14: warning: implicit declaration of function 'bwrite'; did you mean 'kwrite'? [-Wimplicit-function-declaration]
+  176 |              bwrite(bp);
+      |              ^~~~~~
+      |              kwrite
+write.c:193:17: warning: assignment to 'struct buf *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  193 |              bp = getblk(ip->dev, dblk);
+      |                 ^
+write.c:225:11: warning: implicit declaration of function 'bread1'; did you mean 'bread'? [-Wimplicit-function-declaration]
+  225 |      bp = bread1(ip->dev, (u32)blk);
+      |           ^~~~~~
+      |           bread
+write.c:225:9: warning: assignment to 'struct buf *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  225 |      bp = bread1(ip->dev, (u32)blk);
+      |         ^
+write.c:231:18: warning: implicit declaration of function 'get_ubyte' [-Wimplicit-function-declaration]
+  231 |            *cp = get_ubyte(cq);
+      |                  ^~~~~~~~~
+write.c:239:6: warning: implicit declaration of function 'bwrite1'; did you mean 'kwrite'? [-Wimplicit-function-declaration]
+  239 |      bwrite1(bp);
+      |      ^~~~~~~
+      |      kwrite
+./mk: line 8: cd: ../USER: No such file or directory
+sudo: ./mkall: command not found
+exec.c: In function 'exec':
+exec.c:38:3: warning: implicit declaration of function 'kstrcpy' [-Wimplicit-function-declaration]
+   38 |   kstrcpy(kline, (char *)uLINE);
+      |   ^~~~~~~
+exec.c:58:7: warning: implicit declaration of function 'load' [-Wimplicit-function-declaration]
+   58 |   if (load(filename, p) <= 0 ){
+      |       ^~~~
+In file included from exec.c:17:
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+exec.c:59:5: note: in expansion of macro 'printf'
+   59 |     printf("exec loading error\n");
+      |     ^~~~~~
+exec.c:78:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   78 |   strcpy(running->res->name, filename);
+      |   ^~~~~~
+exec.c:78:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+exec.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+exec.c:81:11: warning: returning 'int *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+   81 |   return p->usp;       // return value may ovewrite saved R0 in kstack
+      |          ~^~~~~
+fork.c: In function 'si_kfork':
+fork.c:34:9: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   34 |         kprintf("kfork failed\n");
+      |         ^~~~~~~
+      |         printf
+fork.c:46:13: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   46 |     p->cpsr = 0x10;
+      |             ^
+fork.c:54:5: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   54 |     strcpy(p->res->tty, running->res->tty);
+      |     ^~~~~~
+fork.c:54:5: warning: incompatible implicit declaration of built-in function 'strcpy'
+fork.c:18:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   17 | #include "../type.h"
+  +++ |+#include <string.h>
+   18 | 
+fork.c:100:5: warning: implicit declaration of function 'load' [-Wimplicit-function-declaration]
+  100 |     load(filename, p); // p->PROC containing pid, pgdir, etc
+      |     ^~~~
+fork.c:109:5: warning: implicit declaration of function 'kstrcpy' [-Wimplicit-function-declaration]
+  109 |     kstrcpy(cp, si_istring);
+      |     ^~~~~~~
+fork.c: In function 'kfork':
+fork.c:155:13: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  155 |     p->cpsr = 0x10;
+      |             ^
+fork.c:163:5: warning: incompatible implicit declaration of built-in function 'strcpy'
+  163 |     strcpy(p->res->tty, running->res->tty);
+      |     ^~~~~~
+fork.c:163:5: note: include '<string.h>' or provide a declaration of 'strcpy'
+fork.c: In function 'fork':
+fork.c:264:13: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  264 |     p->cpsr = 0x10;
+      |             ^
+fork.c:272:5: warning: incompatible implicit declaration of built-in function 'strcpy'
+  272 |     strcpy(p->res->tty, running->res->tty);
+      |     ^~~~~~
+fork.c:272:5: note: include '<string.h>' or provide a declaration of 'strcpy'
+except.c: In function 'data_chandler':
+except.c:8:14: warning: implicit declaration of function 'get_spsr' [-Wimplicit-function-declaration]
+    8 |   int spsr = get_spsr();
+      |              ^~~~~~~~
+except.c:18:18: warning: implicit declaration of function 'get_fault_status' [-Wimplicit-function-declaration]
+   18 |   fault_status = get_fault_status();
+      |                  ^~~~~~~~~~~~~~~~
+except.c:19:18: warning: implicit declaration of function 'get_fault_addr' [-Wimplicit-function-declaration]
+   19 |   fault_addr   = get_fault_addr();
+      |                  ^~~~~~~~~~~~~~
+kernel.c: In function 'init':
+kernel.c:83:3: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   83 |   kprintf("kernel_init()\n");
+      |   ^~~~~~~
+      |   printf
+kernel.c:93:5: warning: implicit declaration of function 'kstrcpy' [-Wimplicit-function-declaration]
+   93 |     kstrcpy(p->res->name, pname[i]);
+      |     ^~~~~~~
+kernel.c:156:3: warning: implicit declaration of function 'binit'; did you mean 'init'? [-Wimplicit-function-declaration]
+  156 |   binit();
+      |   ^~~~~
+      |   init
+kernel.c:157:3: warning: implicit declaration of function 'pipe_init' [-Wimplicit-function-declaration]
+  157 |   pipe_init();
+      |   ^~~~~~~~~
+kernel.c:159:3: warning: implicit declaration of function 'fs_init'; did you mean 'init'? [-Wimplicit-function-declaration]
+  159 |   fs_init();
+      |   ^~~~~~~
+      |   init
+kernel.c:163:3: warning: implicit declaration of function 'thinit'; did you mean 'init'? [-Wimplicit-function-declaration]
+  163 |   thinit();
+      |   ^~~~~~
+      |   init
+kernel.c: In function 'scheduler':
+kernel.c:187:6: warning: implicit declaration of function 'switchPgdir' [-Wimplicit-function-declaration]
+  187 |      switchPgdir((u32)running->res->pgdir);
+      |      ^~~~~~~~~~~
+kernel.c:190:5: warning: implicit declaration of function 'setulr' [-Wimplicit-function-declaration]
+  190 |     setulr(VA(4));
+      |     ^~~~~~
+kernel.c: In function 'reschedule':
+kernel.c:200:14: warning: implicit declaration of function 'get_cpsr' [-Wimplicit-function-declaration]
+  200 |   int mode = get_cpsr() & 0x1F;
+      |              ^~~~~~~~
+kernel.c:203:8: warning: implicit declaration of function 'tswitch'; did you mean 'irq_tswitch'? [-Wimplicit-function-declaration]
+  203 |        tswitch();
+      |        ^~~~~~~
+      |        irq_tswitch
+load.c: In function 'search':
+load.c:20:11: warning: implicit declaration of function 'getblock' [-Wimplicit-function-declaration]
+   20 |           getblock(ip->i_block[i], buf2);
+      |           ^~~~~~~~
+load.c:29:20: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+   29 |               if ( strcmp(dp->name, name) == 0 ){
+      |                    ^~~~~~
+In file included from load.c:1:
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+load.c:39:4: note: in expansion of macro 'printf'
+   39 |    printf("serach failed\n");
+      |    ^~~~~~
+load.c: At top level:
+load.c:42:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   42 | load(char *filename, PROC *p)
+      | ^~~~
+In file included from mes.c:17:
+mes.c: In function 'mbuf_init':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+mes.c:27:3: note: in expansion of macro 'printf'
+   27 |   printf("mbuf_init\n");
+      |   ^~~~~~
+mes.c: In function 'get_mbuf':
+mes.c:64:7: warning: implicit declaration of function 'P'; did you mean 'PA'? [-Wimplicit-function-declaration]
+   64 |       P(&mlock);
+      |       ^
+      |       PA
+mes.c:68:7: warning: implicit declaration of function 'V'; did you mean 'VA'? [-Wimplicit-function-declaration]
+   68 |       V(&mlock);
+      |       ^
+      |       VA
+mes.c: In function 'cpfu':
+mes.c:85:14: warning: implicit declaration of function 'get_ubyte' [-Wimplicit-function-declaration]
+   85 |   while( c = get_ubyte(src) ){
+      |              ^~~~~~~~~
+mes.c: At top level:
+mes.c:93:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   93 | cp2u(char *src, char *dest)
+      | ^~~~
+mes.c: In function 'cp2u':
+mes.c:96:5: warning: implicit declaration of function 'put_ubyte' [-Wimplicit-function-declaration]
+   96 |     put_ubyte(*src, dest);
+      |     ^~~~~~~~~
+pipe.c:27:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   27 | pipe_init()
+      | ^~~~~~~~~
+In file included from pipe.c:18:
+pipe.c: In function 'read_pipe':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+pipe.c:40:6: note: in expansion of macro 'printf'
+   40 |      printf("bad fd %d", fd);
+      |      ^~~~~~
+pipe.c:53:9: warning: implicit declaration of function 'put_ubyte' [-Wimplicit-function-declaration]
+   53 |         put_ubyte(c, buf);
+      |         ^~~~~~~~~
+pipe.c:61:8: warning: implicit declaration of function 'kwakeup' [-Wimplicit-function-declaration]
+   61 |        kwakeup(&p->room);
+      |        ^~~~~~~
+pipe.c:67:8: warning: implicit declaration of function 'ksleep' [-Wimplicit-function-declaration]
+   67 |        ksleep(&p->data);
+      |        ^~~~~~
+pipe.c: In function 'write_pipe':
+pipe.c:91:13: warning: implicit declaration of function 'kexit' [-Wimplicit-function-declaration]
+   91 |             kexit(123);    /* MUST die, else ==> many loops */
+      |             ^~~~~
+pipe.c:95:36: warning: implicit declaration of function 'get_ubyte' [-Wimplicit-function-declaration]
+   95 |                p->buf[p->head++] = get_ubyte(buf);
+      |                                    ^~~~~~~~~
+pipe.c: In function 'kpipe':
+pipe.c:179:3: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  179 |   strcpy(ofp[0]->name, "PIPE_READ");
+      |   ^~~~~~
+pipe.c:179:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+pipe.c:19:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+   18 | #include "../type.h"
+  +++ |+#include <string.h>
+   19 | 
+pipe.c: In function 'close_pipe':
+pipe.c:214:14: warning: 'return' with no value, in function returning non-void
+  214 |              return;
+      |              ^~~~~~
+pipe.c:197:5: note: declared here
+  197 | int close_pipe(int fd)
+      |     ^~~~~~~~~~
+pipe.c:218:7: warning: 'return' with no value, in function returning non-void
+  218 |       return;
+      |       ^~~~~~
+pipe.c:197:5: note: declared here
+  197 | int close_pipe(int fd)
+      |     ^~~~~~~~~~
+pipe.c:231:13: warning: 'return' with no value, in function returning non-void
+  231 |             return;
+      |             ^~~~~~
+pipe.c:197:5: note: declared here
+  197 | int close_pipe(int fd)
+      |     ^~~~~~~~~~
+pipe.c:235:7: warning: 'return' with no value, in function returning non-void
+  235 |       return;
+      |       ^~~~~~
+pipe.c:197:5: note: declared here
+  197 | int close_pipe(int fd)
+      |     ^~~~~~~~~~
+queue.c: In function 'enqueue':
+queue.c:91:5: warning: 'return' with no value, in function returning non-void
+   91 |     return;
+      |     ^~~~~~
+queue.c:85:5: note: declared here
+   85 | int enqueue(PROC **queue, PROC *p)
+      |     ^~~~~~~
+queue.c: In function 'printQ':
+queue.c:110:3: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  110 |   kprintf("readyQueue = ");
+      |   ^~~~~~~
+      |   printf
+signal.c: In function 'kkill':
+signal.c:64:6: warning: implicit declaration of function 'kwakeup' [-Wimplicit-function-declaration]
+   64 |      kwakeup(p->event);
+      |      ^~~~~~~
+signal.c:94:6: warning: implicit declaration of function 'wV' [-Wimplicit-function-declaration]
+   94 |      wV(p); // unblock proc from semaphore queue and adjust semaphore value
+      |      ^~
+In file included from signal.c:18:
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+signal.c:100:3: note: in expansion of macro 'printf'
+  100 |   printf("Kernel: killed pid=%d with sig# %d\n", pid, sig);
+      |   ^~~~~~
+signal.c: At top level:
+signal.c:139:8: warning: type defaults to 'int' in declaration of 'setulr' [-Wimplicit-int]
+  139 | extern setulr();
+      |        ^~~~~~
+signal.c: In function 'kpsig':
+signal.c:148:13: warning: 'return' with no value, in function returning non-void
+  148 |   if (n==0) return;
+      |             ^~~~~~
+signal.c:141:5: note: declared here
+  141 | int kpsig()
+      |     ^~~~~
+signal.c:154:5: warning: 'return' with no value, in function returning non-void
+  154 |     return;
+      |     ^~~~~~
+signal.c:141:5: note: declared here
+  141 | int kpsig()
+      |     ^~~~~
+signal.c:162:13: warning: implicit declaration of function 'get_cpsr' [-Wimplicit-function-declaration]
+  162 |      mode = get_cpsr() & 0x1F;
+      |             ^~~~~~~~
+signal.c:165:10: warning: implicit declaration of function 'kexit' [-Wimplicit-function-declaration]
+  165 |          kexit(n<<8);
+      |          ^~~~~
+signal.c:169:8: warning: implicit declaration of function 'irq_exit' [-Wimplicit-function-declaration]
+  169 |        irq_exit(n<<8);
+      |        ^~~~~~~~
+signal.c:191:19: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  191 |      running->upc = newPC;
+      |                   ^
+string.c:17:5: warning: conflicting types for built-in function 'bcopy'; expected 'void(const void *, void *, unsigned int)' [-Wbuiltin-declaration-mismatch]
+   17 | int bcopy(const void *src, void *dest, unsigned int n) {
+      |     ^~~~~
+string.c:29:5: warning: conflicting types for built-in function 'bzero'; expected 'void(void *, unsigned int)' [-Wbuiltin-declaration-mismatch]
+   29 | int bzero(void *dest, unsigned int n) {
+      |     ^~~~~
+string.c: In function 'bzero':
+string.c:30:2: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+   30 |  memset(dest, 0, n);
+      |  ^~~~~~
+string.c:30:2: warning: incompatible implicit declaration of built-in function 'memset'
+string.c:1:1: note: include '<string.h>' or provide a declaration of 'memset'
+  +++ |+#include <string.h>
+    1 | /********************************************************************
+string.c: In function 'geti':
+string.c:311:3: warning: implicit declaration of function 'kgetline' [-Wimplicit-function-declaration]
+  311 |   kgetline(s);
+      |   ^~~~~~~~
+syscall.c: In function 'kpause':
+syscall.c:87:3: warning: implicit declaration of function 'ksleep' [-Wimplicit-function-declaration]
+   87 |   ksleep(PAUSE);
+      |   ^~~~~~
+syscall.c: In function 'kswitch':
+syscall.c:99:3: warning: implicit declaration of function 'tswitch'; did you mean 'kswitch'? [-Wimplicit-function-declaration]
+   99 |   tswitch();
+      |   ^~~~~~~
+      |   kswitch
+In file included from syscall.c:17:
+syscall.c: In function 'kps':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+syscall.c:111:4: note: in expansion of macro 'printf'
+  111 |    printf("================================\n");
+      |    ^~~~~~
+syscall.c:120:12: warning: implicit declaration of function 'kprinti'; did you mean 'printQ'? [-Wimplicit-function-declaration]
+  120 |            kprinti(proc[i].pid);  kprints("    ");
+      |            ^~~~~~~
+      |            printQ
+syscall.c:120:35: warning: implicit declaration of function 'kprints'; did you mean 'printQ'? [-Wimplicit-function-declaration]
+  120 |            kprinti(proc[i].pid);  kprints("    ");
+      |                                   ^~~~~~~
+      |                                   printQ
+syscall.c:123:8: warning: implicit declaration of function 'kstrcpy' [-Wimplicit-function-declaration]
+  123 |        kstrcpy(buf,"       ");
+      |        ^~~~~~~
+syscall.c: In function 'chname':
+syscall.c:166:50: warning: implicit declaration of function 'getesp' [-Wimplicit-function-declaration]
+  166 |           running->pid, running->res->paddress,b,getesp());
+      |                                                  ^~~~~~
+syscall.c:170:6: warning: implicit declaration of function 'kputc' [-Wimplicit-function-declaration]
+  170 |      kputc(*cp);
+      |      ^~~~~
+syscall.c: In function 'prtable':
+syscall.c:230:20: warning: implicit declaration of function 'kgetc' [-Wimplicit-function-declaration]
+  230 |     if ((i%64)==0) kgetc();
+      |                    ^~~~~
+In file included from svc.c:17:
+svc.c: In function 'vfork':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+svc.c:20:13: note: in expansion of macro 'printf'
+   20 | int vfork(){printf("kernel: vfork not yet implemented\n"); }
+      |             ^~~~~~
+svc.c: In function 'svc_handler':
+svc.c:97:6: warning: implicit declaration of function 'kpsig'; did you mean 'kps'? [-Wimplicit-function-declaration]
+   97 |      kpsig();
+      |      ^~~~~
+      |      kps
+svc.c:99:3: warning: implicit declaration of function 'unlock' [-Wimplicit-function-declaration]
+   99 |   unlock();
+      |   ^~~~~~
+t.c: In function 'vectorInt_init':
+t.c:137:39: warning: assignment to 'int' from 'void (*)()' makes integer from pointer without a cast [-Wint-conversion]
+  137 |     *((int *)(VIC_BASE_ADDR + 0x100)) = timer0_handler;
+      |                                       ^
+t.c:138:39: warning: assignment to 'int' from 'void (*)()' makes integer from pointer without a cast [-Wint-conversion]
+  138 |     *((int *)(VIC_BASE_ADDR + 0x104)) = uart0_handler;
+      |                                       ^
+t.c:139:39: warning: assignment to 'int' from 'void (*)()' makes integer from pointer without a cast [-Wint-conversion]
+  139 |     *((int *)(VIC_BASE_ADDR + 0x108)) = uart1_handler;
+      |                                       ^
+t.c: In function 'irq_chandler':
+t.c:173:7: warning: assignment to 'int (*)()' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  173 |     f = *((int *)(VIC_BASE_ADDR + 0x30)); // read ISR address in vectorAddr reg.
+      |       ^
+t.c:190:9: warning: implicit declaration of function 'irq_tswitch' [-Wimplicit-function-declaration]
+  190 |         irq_tswitch(usp, upc, spsr);
+      |         ^~~~~~~~~~~
+t.c: In function 'main':
+t.c:201:5: warning: implicit declaration of function 'fbuf_init' [-Wimplicit-function-declaration]
+  201 |     fbuf_init();
+      |     ^~~~~~~~~
+t.c:205:5: warning: implicit declaration of function 'kbd_init' [-Wimplicit-function-declaration]
+  205 |     kbd_init();
+      |     ^~~~~~~~
+t.c:235:5: warning: implicit declaration of function 'timer_init' [-Wimplicit-function-declaration]
+  235 |     timer_init();
+      |     ^~~~~~~~~~
+t.c:236:5: warning: implicit declaration of function 'timer_start' [-Wimplicit-function-declaration]
+  236 |     timer_start(0);
+      |     ^~~~~~~~~~~
+t.c:237:5: warning: implicit declaration of function 'sdc_init' [-Wimplicit-function-declaration]
+  237 |     sdc_init();
+      |     ^~~~~~~~
+t.c:239:5: warning: implicit declaration of function 'uart_init' [-Wimplicit-function-declaration]
+  239 |     uart_init();
+      |     ^~~~~~~~~
+t.c:241:5: warning: implicit declaration of function 'init' [-Wimplicit-function-declaration]
+  241 |     init();
+      |     ^~~~
+t.c:243:5: warning: implicit declaration of function 'si_kfork'; did you mean 'kfork'? [-Wimplicit-function-declaration]
+  243 |     si_kfork("si_init");
+      |     ^~~~~~~~
+      |     kfork
+t.c:247:5: warning: implicit declaration of function 'mgetc' [-Wimplicit-function-declaration]
+  247 |     mgetc();
+      |     ^~~~~
+t.c:252:9: warning: implicit declaration of function 'unlock' [-Wimplicit-function-declaration]
+  252 |         unlock();
+      |         ^~~~~~
+t.c:255:9: warning: implicit declaration of function 'tswitch' [-Wimplicit-function-declaration]
+  255 |         tswitch(); // switch to run P1 ==> never return again
+      |         ^~~~~~~
+In file included from thread.c:16:
+thread.c: In function 'ktjoin':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+thread.c:48:5: note: in expansion of macro 'printf'
+   48 |     printf("%d in ktjoin\n", running->pid);
+      |     ^~~~~~
+thread.c:49:6: warning: implicit declaration of function 'kwait' [-Wimplicit-function-declaration]
+   49 |      kwait(&status);
+      |      ^~~~~
+thread.c: In function 'ktexit':
+thread.c:56:3: warning: implicit declaration of function 'texit'; did you mean 'ktexit'? [-Wimplicit-function-declaration]
+   56 |   texit(v);
+      |   ^~~~~
+      |   ktexit
+thread.c: In function 'kthread':
+thread.c:84:15: warning: implicit declaration of function 'tgetproc'; did you mean 'getproc'? [-Wimplicit-function-declaration]
+   84 |   p = (PROC *)tgetproc();  // get a PROC from tfreeList
+      |               ^~~~~~~~
+      |               getproc
+thread.c:114:10: warning: assignment to 'int *' from incompatible pointer type 'char *' [-Wincompatible-pointer-types]
+  114 |   p->usp = ustack + 1024; // high end of 1KB ustack area
+      |          ^
+thread.c:118:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  118 |   p->upc = fn;
+      |          ^
+thread.c: In function 'kmutex_lock':
+thread.c:234:5: warning: implicit declaration of function 'tswitch' [-Wimplicit-function-declaration]
+  234 |     tswitch();
+      |     ^~~~~~~
+wait.c: In function 'ksleep':
+wait.c:58:12: warning: implicit declaration of function 'int_off' [-Wimplicit-function-declaration]
+   58 |   int sr = int_off();
+      |            ^~~~~~~
+wait.c:64:3: warning: implicit declaration of function 'tswitch' [-Wimplicit-function-declaration]
+   64 |   tswitch();
+      |   ^~~~~~~
+wait.c:66:3: warning: implicit declaration of function 'int_on' [-Wimplicit-function-declaration]
+   66 |   int_on(sr);
+      |   ^~~~~~
+In file included from wait.c:17:
+wait.c: In function 'texit':
+../type.h:186:18: warning: implicit declaration of function 'kprintf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+  186 | #define  printf  kprintf
+      |                  ^~~~~~~
+wait.c:91:3: note: in expansion of macro 'printf'
+   91 |   printf("proc %d in texit, exitValue=%x\n", running->pid, value);
+      |   ^~~~~~
+wait.c: In function 'kexit':
+wait.c:115:9: warning: implicit declaration of function 'myclose' [-Wimplicit-function-declaration]
+  115 |         myclose(i);
+      |         ^~~~~~~
+wait.c:119:5: warning: implicit declaration of function 'ilock' [-Wimplicit-function-declaration]
+  119 |     ilock(running->res->cwd);
+      |     ^~~~~
+wait.c:120:5: warning: implicit declaration of function 'iput' [-Wimplicit-function-declaration]
+  120 |     iput(running->res->cwd);
+      |     ^~~~
+wait.c: In function 'kwait':
+wait.c:168:7: warning: implicit declaration of function 'tputproc'; did you mean 'putproc'? [-Wimplicit-function-declaration]
+  168 |       tputproc(p);
+      |       ^~~~~~~~
+      |       putproc

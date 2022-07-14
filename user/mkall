@@ -1,0 +1,16 @@
+#! /bin/bash
+# DONE
+sudo ./mku siinit
+sudo ./mku si_login
+
+# needs work
+sudo ./mku si_sh #-DDEBUG
+
+# NOT DONE
+sudo ./mku sils #-DDEBUG
+sudo ./mku sicat #-DDEBUG
+sudo ./mku sigrep # -DDEBUG
+sudo ./mku simore #-DDEBUG
+sudo ./mku sil2u #-DDEBUG
+sudo ./mku sicp #-DDEBUG
+# sudo ./mku sitest

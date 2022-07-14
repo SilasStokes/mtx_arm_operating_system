@@ -1,0 +1,31 @@
+#! /bin/bash
+
+
+#LDLIB=/usr/lib/gcc/arm-none-eabi/6.3.1/libgcc.a
+
+
+if ! [ -z $2 ]
+    then 
+        echo "Compiling $1 with debugging statements"
+fi
+
+arm-none-eabi-as -mcpu=arm926ej-s us.s -o us.o
+arm-none-eabi-gcc -c -mcpu=arm926ej-s $2 -o $1.o $1.c #2> /dev/null
+# arm-none-eabi-gcc -c -mcpu=arm926ej-s -o $1.o $1.c #2> /dev/null
+arm-none-eabi-ld -T u.ld us.o $1.o mtxlib -Ttext=0x80000000 -o $1.elf
+arm-none-eabi-objcopy -O binary $1.elf $1
+sudo mount -o loop ../sdimage /mnt
+sudo cp -av $1 /mnt/bin
+# ls -l /mnt/bin
+sudo umount /mnt
+
+rm $1
+rm *.o *.elf
+
+# if [ "$2" = "$debug" ]; then
+#     # echo "Compiling $1 with $2"
+#     arm-none-eabi-gcc -c -mcpu=arm926ej-s -DDEBUG -o $1.o $1.c #2> /dev/null
+# else
+#     # echo "Compiling $1 without debug"
+#     arm-none-eabi-gcc -c -mcpu=arm926ej-s -o $1.o $1.c #2> /dev/null
+# fi

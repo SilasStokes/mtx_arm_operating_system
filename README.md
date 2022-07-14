@@ -1,7 +1,7 @@
 
 # MTX ARM OPERATING SYSTEM
 
-This code was developed over the course of a semester while taking KC Wang (perhaps infamouse) CPTS-460 course. During the semester he takes you through his textbook (Design and Implementation of the MTX Operating System)[https://link.springer.com/book/10.1007/978-3-319-17575-1] and has students implement their own variations of portions of his book, generally with some starter code. 
+This code was developed over the course of a semester while taking KC Wang (perhaps infamouse) CPTS-460 course. During the semester he takes you through his textbook [Design and Implementation of the MTX Operating System](https://link.springer.com/book/10.1007/978-3-319-17575-1) and has students implement their own variations of portions of his book, generally with some starter code. 
 
 Prior to this assignment we worked on lower level operations like a boot loader, video driver, system memory management, and process switching and so this culminating assignment was adding the user space commands to interact with the system we built over the semester. For this assignment I implemented:
 
@@ -21,7 +21,7 @@ This is an arm system that runs virtually inside qemu. If you'd like to run it, 
 - `sudo apt install qemu-system-arm`
 
 
-All the other code I wrote from my smester in his course can be found (here)[https://github.com/SilasStokes/cpts-460-operating-systems]
+All the other code I wrote from my smester in his course can be found [here](https://github.com/SilasStokes/cpts-460-operating-systems)
 
 
 ## Tests to prove the functionality:

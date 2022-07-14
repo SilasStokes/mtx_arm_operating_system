@@ -26,50 +26,49 @@ All the other code I wrote from my smester in his course can be found [here](htt
 
 ## Tests to prove the functionality:
 
- Commands             Expected Results                 Observed & Comments
--------------    --------------------------------    -----------------------
-1. Boot up     :  P1 (init) create logins          __________________________
+ Commands             Expected Results                 
+-------------    --------------------------------    
+1. Boot up     :  P1 (init) create logins         
 
-2. login:      :  login from tty0                  ___________________________
+2. login:      :  login from tty0                 
 
-3.             :  login from ttyS0, ttyS1          ___________________________
+3.             :  login from ttyS0, ttyS1          
 
-               :  logout; login again              ___________________________
+               :  logout; login again              
 
-sh: Control-C  :  sh must not die                  ___________________________
+sh: Control-C  :  sh must not die                  
 
-4. ls          :  SAME as ls -l in Linux,          ___________________________ 
+4. ls          :  SAME as ls -l in Linux,          
                   except no time field  
-5. cat         : show input lines from stdin:     ____________________________
+5. cat         : show input lines from stdin:     
 
-6. cat f       : show contents of file f           ___________________________ 
+6. cat f       : show contents of file f          
 
 7. cat f1 > f2 
-   ls          : f1, f2 MUST be same size         ____________________________
+   ls          : f1, f2 MUST be same size         
 
 8  grep abcd    :  grep for abcd from stdin
 
-9. grep printf f: show lines with "printf" ONLY   ____________________________ 
+9. grep printf f: show lines with "printf" ONLY   
 
 10. more f      : MUST pause after display ONE screen
                 : Enter key: advance by line 
-                : SPACE key: advance by screen    _____________________________
+                : SPACE key: advance by screen    
 
-11. cat f | more : MUST PAUSE for Enter/Space keys ____________________________
-
-
-12. cat f | grep printf : show lines with printf  ______________________________
+11. cat f | more : MUST PAUSE for Enter/Space keys
 
 
-13. cat f | l2u | grep LINE:  2 pipes         __________________________________
+12. cat f | grep printf : show lines with printf  
 
 
-14. cat f | cat | l2u | grep LINE: 3 PIPEs ________________________________
+13. cat f | l2u | grep LINE:  2 pipes         
 
 
-15. cat < f | cat | grep print > out :    __________________________________
-    cat out (must see out contents)       __________________________________
+14. cat f | cat | l2u | grep LINE: 3 PIPEs 
 
-16. cp f g; ls :   show f and g SAME size   __________________________________
+15. cat < f | cat | grep print > out :    
+    cat out (must see out contents)       
+
+16. cp f g; ls :   show f and g SAME size  
 
 
